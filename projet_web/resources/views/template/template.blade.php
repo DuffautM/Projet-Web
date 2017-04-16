@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         
-        {{ HTML::style('assets/style.css'); }}
+        <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -14,11 +14,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="row">
-            <img href="" alt="Logo du cesi" class="col-xs-2">
-            <p class="">Cesi</p>
-        </div>
-        
+        <header>
+            <div class="row">
+                <img src="{!!asset('img/logo_cesi.jpg')!!}" alt="Logo du cesi" class=" col-xs-offset-1 col-xs-2" id="logo">
+                <p id="title" class="col-xs-offset-6">CESI</p>
+            </div>
+        </header>
         @yield('contenu')
+        
+        <footer>
+                <p class="center">Mentions légales</p>
+        
+        </footer>
     </body>
 </html>
