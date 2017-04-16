@@ -20,6 +20,15 @@
                 <p id="title" class="col-xs-offset-6">CESI</p>
             </div>
         </header>
+        <nav class="navbar navbar-light bg-faded">
+            <div class="row">
+                <div class="col-xs-3 navbar-brand mb-0">Évènement</div>
+                <div class="col-xs-3 navbar-brand mb-0">Club</div>
+                <div class="col-xs-3 navbar-brand mb-0">Goodies</div>
+                <div class="col-xs-3 navbar-brand mb-0">Profil</div>
+            </div>
+        
+        </nav>
         @yield('contenu')
         
         <footer>

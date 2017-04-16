@@ -29,3 +29,9 @@ footer{
     margin-top: 3%;
     font-size: 40px;
 }
+
+nav div div{
+    background-color: #CFC9BA;
+    text-align: center;
+    border-left: 1px solid black;
+}
