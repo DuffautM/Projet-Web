@@ -1,0 +1,17 @@
+Users (id_user, nom_user, prenom_user, mail_user, password_user, phrase_user, promo_user, annee_user, naissance_user, centre_user, club_user, avatar_user, privilege_user)  
+
+Activites (id_activite, nom_activite, detail_activite, public_activite, club_activite, date_activite, prix_activite, ok_activite, budget_activite, gain_activite)  
+
+Goodies (id_goodies, nom_goodies, type_goodies, detail_goodies, prix_goodies)  
+
+Comments (id_comment, text_comment, date_comment)  
+
+Club (id_club, nom_club, baseline_club, description_club, budget_club, enveloppe_club, type_club)  
+
+Photo (id_photo, path_photo, #comments_id_comment)  
+
+Participants (id_user, id_activite, inscrit_activite, participant_activite)  
+
+Like_Dislike (id_activite, id_photo, like_photo) 
+
+Membres (id_user, id_club, privilege_club, nbr_club)
