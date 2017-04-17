@@ -35,3 +35,30 @@ nav div div{
     text-align: center;
     border-left: 1px solid black;
 }
+
+.dropdown{
+    width: 100%;
+}
+
+.dropdown-toggle{
+    color: black;
+    font-size: 24px;
+    font-family: arial;
+}
+
+ul{
+    background-color: #CFC9BA;
+}
+
+.open>a{
+    background-color: #BEBEBE !important;
+    border-color: none !important;
+}
+
+.open>a:hover{
+    border-color: none !important;
+}
+
+.dropdown-menu{
+    background-color: #BEBEBE !important;
+}
