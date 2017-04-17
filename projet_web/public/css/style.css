@@ -27,7 +27,7 @@ footer{
 
 #title{
     margin-top: 3%;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 nav div div{
@@ -61,4 +61,8 @@ ul{
 
 .dropdown-menu{
     background-color: #BEBEBE !important;
+}
+
+.dropdown-toggle{
+    text-align: center;
 }
