@@ -38,3 +38,11 @@ Route::get('club1', function () {
 Route::get('signup', function () {
     return view('signup');
 });
+
+Route::get('correct_login', function () {
+    return view('correct_login');
+});
+
+Route::get('correct_signup', function () {
+    return view('correct_signup');
+});
