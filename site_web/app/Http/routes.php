@@ -50,3 +50,7 @@ Route::get('correct_signup', function () {
 Route::get('produit1', function () {
     return view('produit');
 });
+
+Route::get('evenement1', function () {
+    return view('evenement');
+});
