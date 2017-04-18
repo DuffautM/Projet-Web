@@ -67,3 +67,20 @@ ul{
     text-align: center;
     font-size: 24px;
 }
+
+.menu{
+    border : 1px solid black;
+    background-color: black;
+}
+
+.presentation{
+    margin-bottom: -3px;
+}
+
+.box{
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-bottom: 20px !important;
+}
