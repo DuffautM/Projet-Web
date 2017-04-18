@@ -8,40 +8,64 @@
 
 @section('contenu')
 
-	<form method="post" action="#" class="container col-md-2">
-		 <div class="form-group">
+		<form method="post" action="#" class="form-horizontal">
 
-			<label for="InputEmail">Adresse Email</label>
-			<input type="email" class="form-control" id="InputEmail" placeholder="Votre adresse Email">
+		<div class="form-group">
+
+			<div class="col-md-2 col-md-offset-5">
+
+				<input type="text" class="form-control" id="InputName" placeholder="Votre nom">
+
+			</div>
 
 		</div>
 
 		<div class="form-group">
 
-			<label for="InputPassword">Mot de passe</label>
-			<input type="password" class="form-control" id="InputPassword" placeholder="Votre mot de passe">
+			<div class="col-md-2 col-md-offset-5">
 
-		</div>
+				<input type="password" class="form-control" id="InputFirstName" placeholder="Votre prénom">
 
-		<div class="form-group">
-
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
-
-		</div>
-
-		<div class="text-center align">
-
-			<p><h5>Pas encore inscrit ?</h5></p>
+			</div>
 
 		</div>
 
 	</form>
 
-	<form method="post" action="#" class="container col-md-2">
+
+	<form method="post" action="#" class="form-horizontal">
+
+		<div class="form-group">
+
+			<div class="col-md-2 col-md-offset-5">
+
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+
+			</div>
+
+		</div>
+
+		<div class="form-group">
+			
+			<div class="text-center align">
+
+				<p><h5>Pas encore inscrit ?</h5></p>
+
+			</div>
+
+		</div>
+
+	</form>
+
+	<form method="post" action="#" class="form-horizontal">
 		
 		<div class="form-group">
 
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Inscription</button>
+			<div class="col-md-2 col-md-offset-5">
+
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Inscription</button>
+
+			</div>
 
 		</div>
 
