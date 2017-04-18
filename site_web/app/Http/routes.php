@@ -34,3 +34,7 @@ Route::get('goodies', function () {
 Route::get('club1', function () {
     return view('fiche_club');
 });
+
+Route::get('signup', function () {
+    return view('signup');
+});
