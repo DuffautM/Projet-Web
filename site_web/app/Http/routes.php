@@ -18,3 +18,15 @@ Route::get('/', function () {
 Route::get('event', function () {
     return view('event');
 });
+
+Route::get('club', function () {
+    return view('club');
+});
+
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::get('goodies', function () {
+    return view('goodies');
+});
