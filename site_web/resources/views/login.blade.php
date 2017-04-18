@@ -8,6 +8,8 @@
 
 @section('contenu')
 
+	<div id="decal_form_login">
+
 		<form method="post" action="#" class="form-horizontal">
 
 		<div class="form-group">
@@ -30,45 +32,47 @@
 
 		</div>
 
-	</form>
+		</form>
 
 
-	<form method="post" action="#" class="form-horizontal">
+		<form method="post" action="#" class="form-horizontal">
 
-		<div class="form-group">
+			<div class="form-group">
 
-			<div class="col-md-2 col-md-offset-5">
+				<div class="col-md-2 col-md-offset-5">
 
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+
+				</div>
 
 			</div>
 
-		</div>
+			<div class="form-group">
+				
+				<div class="text-center align">
 
-		<div class="form-group">
+					<p><h5>Pas encore inscrit ?</h5></p>
+
+				</div>
+
+			</div>
+
+		</form>
+
+		<form method="post" action="#" class="form-horizontal">
 			
-			<div class="text-center align">
+			<div class="form-group">
 
-				<p><h5>Pas encore inscrit ?</h5></p>
+				<div class="col-md-2 col-md-offset-5">
 
-			</div>
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Inscription</button>
 
-		</div>
-
-	</form>
-
-	<form method="post" action="#" class="form-horizontal">
-		
-		<div class="form-group">
-
-			<div class="col-md-2 col-md-offset-5">
-
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Inscription</button>
+				</div>
 
 			</div>
 
-		</div>
+		</form>
 
-	</form>
+	</div>
 
 @endsection
