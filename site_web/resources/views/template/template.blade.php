@@ -21,7 +21,7 @@
     <body>
         <header>
             <div class="row">
-                <img src="{!!asset('img/logo_cesi.jpg')!!}" alt="Logo du cesi" class=" col-xs-offset-1 col-xs-2" id="logo">
+                <a href="home"><img src="{!!asset('img/logo_cesi.jpg')!!}" alt="Logo du cesi" class=" col-xs-offset-1 col-xs-2" id="logo"></a>
                 <h1 id="title" class="col-xs-offset-6">CESI</h1>
             </div>
         </header>
@@ -51,7 +51,7 @@
                 
             <ul class="nav navbar-nav col-xs-3">
               <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="club" class="dropdown-toggle" data-toggle="dropdown">
                   Club
                 </a>
               </li>
