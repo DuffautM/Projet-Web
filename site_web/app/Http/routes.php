@@ -22,3 +22,10 @@ Route::get('event', function () {
 Route::get('login', function () {
     return view('login');
 });
+
+Route::get('club', function () {
+    return view('club');
+});
+Route::get('home', function () {
+    return view('home');
+});
