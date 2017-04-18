@@ -46,3 +46,7 @@ Route::get('correct_login', function () {
 Route::get('correct_signup', function () {
     return view('correct_signup');
 });
+
+Route::get('produit1', function () {
+    return view('produit');
+});
