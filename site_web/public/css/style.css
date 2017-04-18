@@ -102,12 +102,18 @@ h3, h4{
     border-color: #000000 !important;
     background-image: none !important;
 }
-<<<<<<<
-
-
-=======
 
 #decal_form_login{
     margin-top: 20px;
 }
->>>>>>>
+
+.shop-category{
+    border-right: 1px solid black;
+    width: 115px;
+    float: left;
+}
+
+.separator{
+    border-bottom: 1px solid black;
+    width: 100px;
+}

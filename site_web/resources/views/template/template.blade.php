@@ -43,7 +43,7 @@
             
             <ul class="nav navbar-nav col-xs-3">
               <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="goodies" class="dropdown-toggle" data-toggle="dropdown">
                   Goodies
                 </a>
               </li>
