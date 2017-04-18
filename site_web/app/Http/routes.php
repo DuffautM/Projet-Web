@@ -18,18 +18,3 @@ Route::get('/', function () {
 Route::get('event', function () {
     return view('event');
 });
-
-Route::get('login', function () {
-    return view('login');
-});
-
-Route::get('club', function () {
-    return view('club');
-});
-Route::get('home', function () {
-    return view('home');
-});
-
-Route::get('goodies', function () {
-    return view('goodies');
-});
