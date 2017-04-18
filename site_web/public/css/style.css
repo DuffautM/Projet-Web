@@ -73,3 +73,14 @@ ul{
     background-color: black;
 }
 
+.presentation{
+    margin-bottom: -3px;
+}
+
+.box{
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-bottom: 20px !important;
+}

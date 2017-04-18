@@ -21,7 +21,7 @@
         <header>
             <div class="row">
                 <img src="{!!asset('img/logo_cesi.jpg')!!}" alt="Logo du cesi" class=" col-xs-offset-1 col-xs-2" id="logo">
-                <p id="title" class="col-xs-offset-6">CESI</p>
+                <h1 id="title" class="col-xs-offset-6">CESI</h1>
             </div>
         </header>
         
