@@ -29,3 +29,7 @@ Route::get('club', function () {
 Route::get('home', function () {
     return view('home');
 });
+
+Route::get('goodies', function () {
+    return view('goodies');
+});
