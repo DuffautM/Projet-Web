@@ -1,18 +1,18 @@
 @extends('template/template')
+
 @section('titre')
-    <div class="row">
-        <h2 class="title center">Bienvenue sur le site du BDE</h2>
-    </div>
+
+    <title>Inscription réussie</title>
+
 @endsection
 
-
 @section('contenu')
-    
-<div class="text-center space">
+
+	<div class="text-center space">
 
     <div>
         
-        <p><h1>Connexion réussie !</h1></p>
+        <p><h1>Inscription réussie !</h1></p>
 
     </div>
 

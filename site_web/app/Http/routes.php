@@ -38,3 +38,7 @@ Route::get('signup', function () {
 Route::get('correct_login', function () {
     return view('correct_login');
 });
+
+Route::get('correct_signup', function () {
+    return view('correct_signup');
+});
