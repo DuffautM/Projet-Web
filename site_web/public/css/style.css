@@ -88,3 +88,17 @@ h2{
 h3, h4{
     color:#78613C !important;
 }
+
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    color: #FFFFFF !important;;
+    background-color: #4C3524 !important;
+    border-color: #000000 !important;
+}
+
+.btn-primary:hover{
+    color: #FFFFFF !important;;
+    background-color: #895f43 !important;
+    border-color: #000000 !important;
+}
+
