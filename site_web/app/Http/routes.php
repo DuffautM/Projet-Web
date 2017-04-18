@@ -30,3 +30,7 @@ Route::get('login', function () {
 Route::get('goodies', function () {
     return view('goodies');
 });
+
+Route::get('club1', function () {
+    return view('fiche_club');
+});

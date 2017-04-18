@@ -117,3 +117,12 @@ h3, h4{
     border-bottom: 1px solid black;
     width: 100px;
 }
+
+#main_image{
+    margin-left: 28%;
+    width: 55%;
+}
+
+.description{
+    margin-top: 10px;
+}
