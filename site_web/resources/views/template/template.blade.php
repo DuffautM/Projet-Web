@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         
         <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
+        
         <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -34,7 +35,7 @@
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="">Voir les événements</a></li>
+                  <li><a href="event">Voir les événements</a></li>
                   <li><a href="">Proposer une idée</a></li>
                 </ul>
               </li>
