@@ -12,7 +12,7 @@ class TUserController extends Controller
 {
     public function show(TUser $user){
 
-    	dd($user);
+    	//dd($user);
     	return view('profil', compact('user'));
 
     }

@@ -12,7 +12,7 @@
         <div class="row">
         <div class="col-xs-12">
             <div class="row">
-            <h7 class="col-xs-offset-2 col-xs-1">{{$user->prenom_user}} </h7>
+            <h7 class="col-xs-offset-2 col-xs-1">{{$user->nom_user}} </h7>
             <h7 class="col-xs-1">Prénom</h7>
                 </div>
             <div class="row">
