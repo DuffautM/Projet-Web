@@ -58,3 +58,7 @@ Route::get('evenement1', function () {
 Route::get('home', function () {
     return view('home');
 });
+
+Route::get('createEv', function () {
+    return view('form_event');
+});
