@@ -13,12 +13,12 @@ class CreateParticipantsTable extends Migration
     public function up()
     {
         Schema::create('participants', function (Blueprint $table) {
-            $table->increments('id_user')->unsigned();
+            $table->integer('id_user')->unsigned();
             $table->integer('id_activite')->unsigned();
             $table->integer('inscrit_activite');
             $table->integer('participant_activite');
-            $table->foreign('id_user')->references('id_user')->on('t_users');
-            $table->foreign('id_activite')->references('id_activite')->on('activities');
+            $table->foreign('id_user')->references('id')->on('t_users');
+            $table->foreign('id_activite')->references('id')->on('activities');
         });
     }
 

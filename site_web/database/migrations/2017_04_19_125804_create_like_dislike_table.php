@@ -16,8 +16,8 @@ class CreateLikeDislikeTable extends Migration
             $table->integer('id_photo')->unsigned();
             $table->integer('id_activite')->unsigned();
             $table->integer('like_photo');
-            $table->foreign('id_activite')->references('id_activite')->on('activities');
-            $table->foreign('id_photo')->references('id_photo')->on('photo');
+            $table->foreign('id_activite')->references('id')->on('activities');
+            $table->foreign('id_photo')->references('id')->on('photo');
 
         });
     }
