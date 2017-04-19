@@ -10,9 +10,8 @@ use App\Http\Controllers\Controller;
 
 class TUserController extends Controller
 {
-    public function show(TUser $user){
-
-    	dd($user);
+    public function show(){
+        $user = DB::table('t_users')->find(1);
     	return view('profil', compact('user'));
 
     }

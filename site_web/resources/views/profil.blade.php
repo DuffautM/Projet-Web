@@ -12,20 +12,20 @@
         <div class="row">
         <div class="col-xs-12">
             <div class="row">
-            <h7 class="col-xs-offset-2 col-xs-1">{{$user->prenom_user}} </h7>
-            <h7 class="col-xs-1">Prénom</h7>
+            <h7 class="col-xs-offset-2 col-xs-1">{{$user->nom_user}} </h7>
+            <h7 class="col-xs-1">{{$user->prenom_user}}</h7>
                 </div>
             <div class="row">
-                <p class="col-xs-offset-2 col-xs-2">Age : 18 ans</p>
+                <p class="col-xs-offset-2 col-xs-2">Age : {{$user->prenom_user}}</p>
             </div>
             <div class="row">
-                <p class="col-xs-offset-2 col-xs-2">Promotion : A2 Exia</p>
+                <p class="col-xs-offset-2 col-xs-2">Promotion : {{$user->annee_user}} {{$user->promo_user}}</p>
             </div>
             <div class="row">
-                <p class="col-xs-offset-2 col-xs-2">Centre : Lilles</p>
+                <p class="col-xs-offset-2 col-xs-2">Centre : {{$user->centre_user}}</p>
             </div>
             <div class="row">
-                <p class="col-xs-offset-2 col-xs-2">Phrase biographique</p>
+                <p class="col-xs-offset-2 col-xs-2">{{$user->phrase_user}}</p>
             </div>
             <img src="{!!asset('img/Club.jpg')!!}" class="col-xs-offset-1 col-xs-4 profil">
         </div>

@@ -75,10 +75,10 @@ Route::get('editProfil', function () {
     return view('profil_edit');
 });
 
-Route::get('profil', function () {
+/*Route::get('profil', function () {
     $user = DB::table('t_users')->find(1);
    // dd($user);
     return view('profil', compact('user'));
-});
+});*/
 
 Route::get('profil/{id}', 'TUserController@show');
