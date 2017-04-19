@@ -13,7 +13,7 @@ class CreateClubTable extends Migration
     public function up()
     {
         Schema::create('club', function (Blueprint $table) {
-            $table->increments('id_club');
+            $table->increments('id');
             $table->text('nom_club');
             $table->text('baseline_club');
             $table->text('description_club');

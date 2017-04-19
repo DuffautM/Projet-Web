@@ -13,7 +13,7 @@ class CreateGoodiesTable extends Migration
     public function up()
     {
         Schema::create('goodies', function (Blueprint $table) {
-            $table->increments('id_goodies');
+            $table->increments('id');
             $table->text('nom_goodies');
             $table->text('type_goodies');
             $table->text('detail_goodies');
