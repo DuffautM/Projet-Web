@@ -74,11 +74,11 @@ Route::get('profil', function () {
 Route::get('editProfil', function () {
     return view('profil_edit');
 });
-
-/*Route::get('profil', function () {
-    $user = DB::table('t_users')->find(1);
-   // dd($user);
+/*Route::get('profil', function () {*/
+Route::get('profil/{id}', function ($id) {
+    $user = DB::table('t_users')->find($id);
+    //dd($user);
     return view('profil', compact('user'));
-});*/
+});
 
-Route::get('profil/{id}', 'TUserController@show');
+//Route::get('profil/{id}', 'TUserController@show');

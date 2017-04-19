@@ -13,10 +13,31 @@
         <div class="col-xs-12">
             <div class="row">
             <h7 class="col-xs-offset-2 col-xs-1">{{$user->nom_user}} </h7>
+            <h7 class="col-xs-1">{{$user->nom_user}}</h7>
             <h7 class="col-xs-1">{{$user->prenom_user}}</h7>
                 </div>
             <div class="row">
-                <p class="col-xs-offset-2 col-xs-2">Age : {{$user->prenom_user}}</p>
+                <p class="col-xs-offset-2 col-xs-2">Age : <?
+                    date_default_timezone_set('UTC');
+                    $now=date("Y");
+                    $nowM=date("m");
+                    $nowD=date("d");
+                    $end_date=$user->naissance_user;
+                    
+                    $annee = substr($end_date, 0, 4);
+                    $mois = substr($end_date, 5, 2);
+                    $jour = substr($end_date, 8, 10);
+                    if($mois>$nowM){
+                        $age=$now-$annee;
+                    }elseif($mois==$nowM && $jour>=$nowD){
+                        $age=$now-$annee;
+                    }
+                    else{
+                        $age=$now-$annee-1;
+                    }
+                    
+                    echo $age;
+                ?>
             </div>
             <div class="row">
                 <p class="col-xs-offset-2 col-xs-2">Promotion : {{$user->annee_user}} {{$user->promo_user}}</p>
