@@ -66,3 +66,7 @@ Route::get('createEv', function () {
 Route::get('createClub', function () {
     return view('form_club');
 });
+
+Route::get('profil', function () {
+    return view('profil');
+});
