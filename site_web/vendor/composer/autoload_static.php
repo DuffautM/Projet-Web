@@ -272,6 +272,7 @@ class ComposerStaticInit75649978ad9ac7568f32efb88e52b391
         'CreateParticipantsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_125453_create_participants_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreatePhotoTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_124301_create_photo_table.php',
+        'CreateTUsersTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_160834_create_t_users_table.php',
         'CreateUserTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_121437_create_user_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',

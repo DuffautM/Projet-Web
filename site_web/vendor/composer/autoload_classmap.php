@@ -15,6 +15,7 @@ return array(
     'CreateParticipantsTable' => $baseDir . '/database/migrations/2017_04_19_125453_create_participants_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreatePhotoTable' => $baseDir . '/database/migrations/2017_04_19_124301_create_photo_table.php',
+    'CreateTUsersTable' => $baseDir . '/database/migrations/2017_04_19_160834_create_t_users_table.php',
     'CreateUserTable' => $baseDir . '/database/migrations/2017_04_19_121437_create_user_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
