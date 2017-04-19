@@ -78,7 +78,7 @@
         @yield('titre')
         @yield('contenu')
         
-        <footer>
+        <footer id="mention">
                 <p class="center">Mentions légales</p>
         
         </footer>

@@ -54,3 +54,7 @@ Route::get('produit1', function () {
 Route::get('evenement1', function () {
     return view('evenement');
 });
+
+Route::get('home', function () {
+    return view('home');
+});
