@@ -42,13 +42,13 @@
 
 			<div class="col-md-2 col-md-offset-4 space">
 
-				<input type="password" class="form-control" id="InputPassword" placeholder="Votre mot de passe">
+				<input type="password" class="form-control" id="InputPassword" placeholder="Ancien mot de passe">
 
 			</div>
 
 			<div class="col-md-2 space">
 
-				<input type="password" class="form-control" id="InputConfirmation" placeholder="Confirmation du mot de passe">
+				<input type="password" class="form-control" id="InputConfirmation" placeholder="Nouveau mot de passe">
 
 			</div>
 

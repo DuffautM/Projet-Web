@@ -70,3 +70,7 @@ Route::get('createClub', function () {
 Route::get('profil', function () {
     return view('profil');
 });
+
+Route::get('editProfil', function () {
+    return view('profil_edit');
+});
