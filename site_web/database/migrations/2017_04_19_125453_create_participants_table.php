@@ -17,7 +17,7 @@ class CreateParticipantsTable extends Migration
             $table->integer('id_activite')->unsigned();
             $table->integer('inscrit_activite');
             $table->integer('participant_activite');
-            $table->foreign('id_user')->references('id_user')->on('user');
+            $table->foreign('id_user')->references('id_user')->on('t_users');
             $table->foreign('id_activite')->references('id_activite')->on('activities');
         });
     }

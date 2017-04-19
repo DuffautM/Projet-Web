@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserTable extends Migration
+class CreateTUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,8 @@ class CreateUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('user', function (Blueprint $table) {
-            $table->increments('id_user');
+        Schema::create('t_users', function (Blueprint $table) {
+            $table->increments('id');
             $table->text('nom_user');
             $table->text('prenom_user');
             $table->text('mail_user');
@@ -36,6 +36,6 @@ class CreateUserTable extends Migration
      */
     public function down()
     {
-        Schema::drop('user');
+        Schema::drop('t_users');
     }
 }

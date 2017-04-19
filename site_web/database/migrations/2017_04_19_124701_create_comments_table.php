@@ -19,7 +19,7 @@ class CreateCommentsTable extends Migration
             $table->integer('id_photo')->unsigned();
             $table->integer('id_user')->unsigned();
             $table->foreign('id_photo')->references('id_photo')->on('photo');
-            $table->foreign('id_user')->references('id_user')->on('user');
+            $table->foreign('id_user')->references('id_user')->on('t_users');
         });
     }
 
