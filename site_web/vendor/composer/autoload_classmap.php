@@ -6,7 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'CreateActivitiesTable' => $baseDir . '/database/migrations/2017_04_19_122204_create_activities_table.php',
+    'CreateClubTable' => $baseDir . '/database/migrations/2017_04_19_125004_create_club_table.php',
+    'CreateCommentsTable' => $baseDir . '/database/migrations/2017_04_19_124701_create_comments_table.php',
+    'CreateGoodiesTable' => $baseDir . '/database/migrations/2017_04_19_123900_create_goodies_table.php',
+    'CreateLikeDislikeTable' => $baseDir . '/database/migrations/2017_04_19_125804_create_like_dislike_table.php',
+    'CreateMembersTable' => $baseDir . '/database/migrations/2017_04_19_130035_create_members_table.php',
+    'CreateParticipantsTable' => $baseDir . '/database/migrations/2017_04_19_125453_create_participants_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreatePhotoTable' => $baseDir . '/database/migrations/2017_04_19_124301_create_photo_table.php',
+    'CreateUserTable' => $baseDir . '/database/migrations/2017_04_19_121437_create_user_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',

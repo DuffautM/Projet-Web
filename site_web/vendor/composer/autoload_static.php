@@ -263,7 +263,16 @@ class ComposerStaticInit75649978ad9ac7568f32efb88e52b391
     );
 
     public static $classMap = array (
+        'CreateActivitiesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_122204_create_activities_table.php',
+        'CreateClubTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_125004_create_club_table.php',
+        'CreateCommentsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_124701_create_comments_table.php',
+        'CreateGoodiesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_123900_create_goodies_table.php',
+        'CreateLikeDislikeTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_125804_create_like_dislike_table.php',
+        'CreateMembersTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_130035_create_members_table.php',
+        'CreateParticipantsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_125453_create_participants_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreatePhotoTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_124301_create_photo_table.php',
+        'CreateUserTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_19_121437_create_user_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
