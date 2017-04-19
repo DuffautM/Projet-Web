@@ -18,7 +18,7 @@ class CreateCommentsTable extends Migration
             $table->date('date_comment');
             $table->integer('id_photo')->unsigned();
             $table->integer('id_user')->unsigned();
-            $table->foreign('id_photo')->references('id_')->on('photo');
+            $table->foreign('id_photo')->references('id')->on('photo');
             $table->foreign('id_user')->references('id')->on('t_users');
         });
     }
