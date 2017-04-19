@@ -62,3 +62,7 @@ Route::get('home', function () {
 Route::get('createEv', function () {
     return view('form_event');
 });
+
+Route::get('createClub', function () {
+    return view('form_club');
+});
