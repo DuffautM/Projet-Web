@@ -38,14 +38,14 @@
                 </a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="event">Voir les événements</a></li>
-                  <li><a href="">Proposer une idée</a></li>
+                  <li><a href="createEv">Proposer une idée</a></li>
                 </ul>
               </li>
             </ul>
             
             <ul class="nav navbar-nav col-xs-3">
               <li class="dropdown">
-                <a href="goodies" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="goodies" class="dropdown-toggle">
                   Goodies
                 </a>
               </li>
@@ -55,7 +55,12 @@
               <li class="dropdown">
                 <a href="club" class="dropdown-toggle" data-toggle="dropdown">
                   Club
+                    <span class="caret"></span>
                 </a>
+                  <ul class="dropdown-menu" role="menu">
+                  <li><a href="club">Voir les clubs</a></li>
+                  <li><a href="createClub">Créer un club</a></li>
+                </ul>
               </li>
             </ul>
                 
@@ -66,10 +71,10 @@
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="">Connection</a></li>
-                  <li><a href="">Voir le profil de</a></li>
+                  <li><a href="login">Connection</a></li>
+                  <li><a href="profil">Voir le profil de</a></li>
                   <li class="divider"></li>
-                  <li><a href="">Mon profil</a></li>
+                  <li><a href="editProfil">Mon profil</a></li>
                 </ul>
               </li>
             </ul>

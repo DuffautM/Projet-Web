@@ -2,7 +2,7 @@
 @section('titre')
 <div class="container">
     <div class="row">
-        <h3 class="title">Formulaire d'événements</h3>
+        <h3 class="title">Formulaire de création de club</h3>
     </div>
 @endsection
 

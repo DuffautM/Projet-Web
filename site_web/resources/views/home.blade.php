@@ -19,6 +19,6 @@
     <div class="container">
             <a href="event"><img src="{!!asset('img/Event.jpg')!!}" alt=Event class="col-xs-3 img-thumbnail"></a>
         <a href="club"><img src="{!!asset('img/Club.jpg')!!}" alt=Event class=" col-xs-offset-1 col-xs-3 img-thumbnail"></a>
-        <a href="event"><img src="{!!asset('img/Goodies.jpg')!!}" alt=Event class=" col-xs-offset-1 col-xs-3 img-thumbnail"></a>
+        <a href="goodies"><img src="{!!asset('img/Goodies.jpg')!!}" alt=Event class=" col-xs-offset-1 col-xs-3 img-thumbnail"></a>
     </div>
 @endsection
