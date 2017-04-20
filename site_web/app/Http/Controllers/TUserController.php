@@ -16,4 +16,21 @@ class TUserController extends Controller
     	return view('profil', compact('user'));
 
     }
+
+    public function login(Request $request){
+
+        //dd($user);
+        //return view('profil', compact('user'));
+
+        if(TUser::where('mail_user', $request->InputMail)->where('password_user', $request->InputPassword)->first())
+        {
+
+                return view('correct_login');
+
+        }
+
+
+
+    }
+
 }

@@ -10,13 +10,15 @@
 
 	<div id="decal_form_login">
 
-		<form method="post" action="#" class="form-horizontal">
+		<form method="post" action="login/correct_login" class="form-horizontal">
+
+		{{ csrf_field() }}
 
 		<div class="form-group">
 
 			<div class="col-md-2 col-md-offset-5">
 
-				<input type="text" class="form-control" id="InputName" placeholder="Votre nom">
+				<input type="text" class="form-control" name="InputMail" placeholder="Votre mail">
 
 			</div>
 
@@ -26,16 +28,11 @@
 
 			<div class="col-md-2 col-md-offset-5">
 
-				<input type="password" class="form-control" id="InputFirstName" placeholder="Votre prénom">
+				<input type="password" class="form-control" name="InputPassword" placeholder="Votre password">
 
 			</div>
 
 		</div>
-
-		</form>
-
-
-		<form method="post" action="#" class="form-horizontal">
 
 			<div class="form-group">
 
@@ -59,19 +56,12 @@
 
 		</form>
 
-		<form method="post" action="#" class="form-horizontal">
-			
-			<div class="form-group">
+	</div>
 
-				<div class="col-md-2 col-md-offset-5">
 
-					<button class="btn btn-lg btn-primary btn-block" type="submit">Inscription</button>
+	<div class="col-md-2 col-md-offset-5">
 
-				</div>
-
-			</div>
-
-		</form>
+		<a href="signup" class="btn btn-lg btn-primary btn-block" role="button">Inscription</a>
 
 	</div>
 
