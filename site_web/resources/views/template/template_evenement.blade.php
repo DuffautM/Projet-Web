@@ -40,10 +40,9 @@
 <div class="container">
     <div class="row">
         <h2 id="description">Description :</h2>
-        <h2 id="date">Fin d'inscription le 27/05/2017</h2>
+        <h2 id="date">Fin d'inscription le {{$evenement->date_activite}}</h2>
     </div>
-    <p>Voici un article</p>
-    <p>Achetez le !</p>
+    {{$evenement->detail_activite}}
     <h5>Participant :</h5>
 </div>
 @endsection

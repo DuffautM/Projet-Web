@@ -47,10 +47,6 @@ Route::get('produit1', function () {
     return view('produit');
 });
 
-Route::get('evenement1', function () {
-    return view('evenement');
-});
-
 Route::get('home', function () {
     return view('home');
 });
@@ -87,4 +83,9 @@ Route::get('club/{id}', function ($id) {
     $club = DB::table('club')->find($id);
     //dd($user);
     return view('fiche_club', compact('club'));
+});
+Route::get('event/{id}', function ($id) {
+    $evenement = DB::table('activities')->find($id);
+    //dd($evenement);
+    return view('evenement', compact('evenement'));
 });
