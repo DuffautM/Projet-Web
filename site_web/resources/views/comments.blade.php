@@ -15,19 +15,19 @@
 
     <div class="col-md-1 col-md-offset-1">
 
-        <div class="form-control">
-
-            <input type="button" class="form-control btn-default" value="+ 1" /><br/>
-            <p class="text-center">5</p>
+            <input type="button" class="form-control btn-default" value="+ 1" style="margin-top:150px"/><br/>
+            <p class="text-center">{{$like->like_photo}}</p>
             <input type="button" class="form-control btn-default" value="- 1" /><br/>
 
-        </div>
             
     </div>
 
 </div>
-
-    <div class="space col-md-2 col-md-offset-1">
+    <div class="row">
+    <div class="space col-md-2 col-md-offset-1" style="
+    margin-top: -90px;
+    margin-bottom: 30px;
+">
         
         <p><h3>Commentaires</h3></p>
 
@@ -55,14 +55,14 @@
 
                         </div>
 
-                        <h6 class="text-muted time">Date du post</h6>
+                        <h6 class="text-muted time">{{$comment->date_comment}}</h6>
                     </div>
 
                 </div> 
 
                 <div class="post-description"> 
 
-                    <p>Message du commentaire</p>
+                    <p>{{$comment->text_comment}}</p>
 
                 </div>
 
@@ -71,6 +71,7 @@
         </div>
 
     </div>
+        
+        </div>
 
-</div>
 @endsection
