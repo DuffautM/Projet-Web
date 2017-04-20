@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('event', function () {
-    return view('event');
+    $event = DB::table('activities')->where('ok_activite', '0')->get();
+    $past = DB::table('activities')->where('ok_activite', '2')->get();
+    return view('event', compact('event', 'past'));
 });
 
 Route::get('club', function () {
