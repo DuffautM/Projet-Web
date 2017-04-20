@@ -74,10 +74,8 @@ Route::get('profil', function () {
 Route::get('editProfil', function () {
     return view('profil_edit');
 });
-
-Route::get('profil/1', function () {
-    $user = DB::table('t_users')->find(3);
-    //dd($user);
+Route::get('profil/{id}', function ($id) {
+    $user = DB::table('t_users')->find($id);
     return view('profil', compact('user'));
 });
 
@@ -87,6 +85,5 @@ Route::post('correct_login', function () {
     return view('correct_login', compact('user'));
 });
 
-Route::get('profil/{id}', 'TUserController@show');
 
 Route::post('signup/correct_signup', 'TUserController@store');
