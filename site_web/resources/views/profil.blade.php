@@ -27,7 +27,8 @@
             <div class="row">
                 <p class="col-xs-offset-2 col-xs-2">{{$user->avatar_user}}</p>
             </div>
-            <img src="<?php echo $user->avatar_user ?>" class="col-xs-offset-1 col-xs-4 profil">
+            <?php 
+            echo'<img src="'?>{{ $user->avatar_user}}<?php echo'" class="col-xs-offset-1 col-xs-4 profil">' ?>
             
         </div>
         </div>

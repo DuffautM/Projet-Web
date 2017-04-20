@@ -27,7 +27,7 @@ class TUserController extends Controller
             $file = $request->file('InputImage');
             $filename=uniqid("avatar_") . "."  . $file->getClientOriginalExtension();
             //$file->move('img', $filename);
-            $path = "http://localhost:8888/Projet_Web/site_web/public/img/" . $filename;
+            $path = "../img/" . $filename;
     		$user->nom_user = $request->InputName;
     		$user->prenom_user = $request->InputFirstName;
     		$user->mail_user = $request->InputMail;
