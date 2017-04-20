@@ -20,6 +20,7 @@ class CreateClubTable extends Migration
             $table->float('budget_club');
             $table->float('enveloppe_club');
             $table->text('type_club');
+            $table->timestamps();
         });
     }
 

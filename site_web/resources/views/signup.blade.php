@@ -8,7 +8,7 @@
 
 @section('contenu')
 
-	<form method="post" action="correct_signup" class="">
+	<form method="post" action="signup/correct_signup" class="">
 
 	{{ csrf_field() }}
 
@@ -30,7 +30,7 @@
 
 		<div class="form-group container col-md-4 col-md-offset-4 space">
 
-			<input type="email" class="form-control" name="InputMail" placeholder="Votre addresse mail">
+			<input type="email" class="form-control" pattern='[A-z.]*[@]cesi\.fr$|[A-z.]*[@]viacesi\.fr$' name="InputMail" placeholder="Votre addresse mail">
 
 		</div>
 
@@ -60,121 +60,81 @@
 			
 			<div class=" col-md-1 col-md-offset-5">
 
-
-
-				<select class="form-control">
-
-						<?php
-
-							for($j=1; $j <= 31; $j++){
-									
-								echo '<option>'.$j.'</option>';
-
-							}
-							 
-						?>
-
-				</select>
-
-				<select class="form-control">
-
-						<?php
-
-							for($m=1; $m <= 12; $m++){
-									
-								echo'<option>'.$m.'</option>';
-
-							}
-							 
-						?>
-
-					</select>
-
-					<select class="form-control">
-
-						<?php
-
-							for($a=1980; $a <= (date("Y")-15); $a++){
-									
-								echo'<option>'.$a.'</option>';
-
-							}
-							 
-						?>
-
-						</select>
+				<input type="date" min="{{date('Y-m-d')}}" name="InputBirth">
 
 			</div>
 
 		</div>
 
-		<div class="row space">
-			
-			<div class=" col-md-3 col-md-offset-5">
+		<div class="col-md-2 space">
 
-				<div class="btn-group">
-				
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Formation <span class="caret"></span>
-					</button>
+			<div class="radio-inline">
 
-					<ul class="dropdown-menu">
+	 			<label><input type="radio" name="InputPromo" value="Exia">Exia</label>
 
-						<li><a href="#">Ei</a></li>
-						<li><a href="#">Exia</a></li>
-						<li><a href="#">Phipa</a></li>
+	 		</div>
 
-					</ul>
+	 		<div class="radio-inline">
 
-				</div>
-
-				<div class="btn-group">
-				
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Promotion <span class="caret"></span>
-					</button>
-
-					<ul class="dropdown-menu">
-
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-
-					</ul>
-
-				</div>
+				<label><input type="radio" name="InputPromo" value="Ei">Ei</label>
 
 			</div>
 
 		</div>
 
-		<!--Récupération des noms de clubs dans la BDD pour création dynamique de la liste de checkbox -->
+		<div class="col-md-2 space">
 
-		<?php
+			<div class="radio-inline">
 
-		echo <<< TAG
+ 				<label><input type="radio" name="InputYear" value="1">1</label> 
+
+			</div>
+
+			<div class="radio-inline">
+
+ 				<label><input type="radio" name="InputYear" value="2">2</label> 
+
+			</div>
+
+			<div class="radio-inline">
+
+ 				<label><input type="radio" name="InputYear" value="3">3</label> 
+
+			</div>
+
+			<div class="radio-inline">
+
+ 				<label><input type="radio" name="InputYear" value="4">4</label> 
+
+			</div>
+
+			<div class="radio-inline">
+
+ 				<label><input type="radio" name="InputYear" value="5">5</label> 
+
+			</div>
+
+		</div>
 
 		<div>
 
-			<div class="checkbox">
+			<select class="form-control	 col-md-offset-2" name="InputCentre">
 
- 				<label>
+				<option value="Toulouse">Toulouse</option>
+				<option value="Paris">Paris</option>
+				<option value="Nantes">Nantes</option>
+				<option value="Bordeaux">Bordeaux</option>
+				<option value="Lilles">Lilles</option>
 
-	    			<input type="checkbox" value="">
-
-	   				 Option one is this and that&mdash;be sure to include why it's great
-
-  				</label>
-
-			</div>
+			</select>
 
 		</div>
 
-TAG;
+</div>
 
-		?>
+
+
+		<!--Récupération des noms de clubs dans la BDD pour création dynamique de la liste de checkbox -->
 
 		<div class="form-group container col-md-2 col-md-offset-5 space">
 

@@ -18,7 +18,7 @@ class CreateLikeDislikeTable extends Migration
             $table->integer('like_photo');
             $table->foreign('id_activite')->references('id')->on('activities');
             $table->foreign('id_photo')->references('id')->on('photo');
-
+            $table->timestamps();
         });
     }
 

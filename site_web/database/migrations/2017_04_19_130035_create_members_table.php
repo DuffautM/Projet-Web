@@ -19,6 +19,7 @@ class CreateMembersTable extends Migration
             $table->integer('nbr_club');
             $table->foreign('id_user')->references('id')->on('t_users');
             $table->foreign('id_club')->references('id')->on('club');
+            $table->timestamps();
         });
     }
 

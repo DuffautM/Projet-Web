@@ -19,6 +19,7 @@ class CreateParticipantsTable extends Migration
             $table->integer('participant_activite');
             $table->foreign('id_user')->references('id')->on('t_users');
             $table->foreign('id_activite')->references('id')->on('activities');
+            $table->timestamps();
         });
     }
 
