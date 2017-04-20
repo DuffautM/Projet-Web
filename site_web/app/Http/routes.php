@@ -51,10 +51,6 @@ Route::get('produit1', function () {
     return view('produit');
 });
 
-Route::get('evenement1', function () {
-    return view('evenement');
-});
-
 Route::get('home', function () {
     return view('home');
 });
@@ -81,4 +77,8 @@ Route::get('profil/1', function () {
     return view('profil', compact('user'));
 });
 
-Route::get('profil/{id}', 'TUserController@show');
+Route::get('event/{id}', function ($id) {
+    $evenement = DB::table('activities')->find($id);
+    //dd($evenement);
+    return view('evenement', compact('evenement'));
+});
