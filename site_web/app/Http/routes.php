@@ -73,14 +73,10 @@ Route::get('profil/{id}', function ($id) {
     return view('profil', compact('user'));
 });
 
-Route::post('correct_login', function () {
-    $user = DB::table('t_users')->where('mail_user', '=', $mail)->get();
-    //dd($user);
-    return view('correct_login', compact('user'));
-});
-
+Route::post('login/correct_login', 'TUserController@login');
 
 Route::post('signup/correct_signup', 'TUserController@store');
+
 Route::get('club/{id}', function ($id) {
     $club = DB::table('club')->find($id);
     //dd($user);
