@@ -10,7 +10,7 @@
 
 	<div id="decal_form_login">
 
-		<form method="post" action="correct_login" class="form-horizontal">
+		<form method="post" action="login/correct_login" class="form-horizontal">
 
 		 {{ csrf_field() }}
 
