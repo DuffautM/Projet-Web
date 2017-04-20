@@ -31,10 +31,6 @@ Route::get('goodies', function () {
     return view('goodies');
 });
 
-Route::get('club1', function () {
-    return view('fiche_club');
-});
-
 Route::get('signup', function () {
     return view('signup');
 });
@@ -81,4 +77,8 @@ Route::get('profil/1', function () {
     return view('profil', compact('user'));
 });
 
-Route::get('profil/{id}', 'TUserController@show');
+Route::get('club/{id}', function ($id) {
+    $club = DB::table('club')->find($id);
+    //dd($user);
+    return view('fiche_club', compact('club'));
+});
