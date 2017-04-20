@@ -81,4 +81,11 @@ Route::get('profil/1', function () {
     return view('profil', compact('user'));
 });
 
+Route::get('comment', function () {
+    $comment = DB::table('comments')->find(1);
+    $like = DB::table('like_dislike')->find(1);
+    //dd($user);
+    return view('comments', compact('comment', 'like'));
+});
+
 Route::get('profil/{id}', 'TUserController@show');
