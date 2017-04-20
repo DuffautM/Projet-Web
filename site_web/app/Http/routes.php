@@ -76,7 +76,7 @@ Route::get('editProfil', function () {
 });
 
 Route::get('profil/1', function () {
-    $user = DB::table('t_users')->find(1);
+    $user = DB::table('t_users')->find(3);
     //dd($user);
     return view('profil', compact('user'));
 });

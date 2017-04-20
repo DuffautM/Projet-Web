@@ -24,6 +24,10 @@ class TUserController extends Controller
     	} else {
     		$user = new TUser;
 
+            $file = $request->file('InputImage');
+            $filename=uniqid("avatar_") . "."  . $file->getClientOriginalExtension();
+            //$file->move('img', $filename);
+            $path = "http://localhost:8888/Projet_Web/site_web/public/img/" . $filename;
     		$user->nom_user = $request->InputName;
     		$user->prenom_user = $request->InputFirstName;
     		$user->mail_user = $request->InputMail;
@@ -35,6 +39,7 @@ class TUserController extends Controller
     		$user->centre_user = $request->InputCentre;
     		$user->club_user = $request->InputClub;
     		$user->avatar_user = $request->InputAvatar;
+    		$user->avatar_user = $path;
     		$user->privilege_user = 0;
     		$user->save();
     		return $user;

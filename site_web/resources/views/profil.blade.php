@@ -25,9 +25,10 @@
                 <p class="col-xs-offset-2 col-xs-2">Centre : Lilles</p>
             </div>
             <div class="row">
-                <p class="col-xs-offset-2 col-xs-2">Phrase biographique</p>
+                <p class="col-xs-offset-2 col-xs-2">{{$user->avatar_user}}</p>
             </div>
-            <img src="{!!asset('img/Club.jpg')!!}" class="col-xs-offset-1 col-xs-4 profil">
+            <img src="<?php echo $user->avatar_user ?>" class="col-xs-offset-1 col-xs-4 profil">
+            
         </div>
         </div>
     

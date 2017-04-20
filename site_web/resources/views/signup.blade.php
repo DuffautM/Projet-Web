@@ -8,7 +8,7 @@
 
 @section('contenu')
 
-	<form method="post" action="signup/correct_signup" class="">
+	<form method="post" action="signup/correct_signup" class="" enctype="multipart/form-data">
 
 	{{ csrf_field() }}
 
@@ -58,9 +58,16 @@
 
 		<div class="row space">
 			
-			<div class=" col-md-1 col-md-offset-5">
+			<div class=" col-md-1 col-md-offset-4">
 
 				<input type="date" min="{{date('Y-m-d')}}" name="InputBirth">
+
+			</div>
+            <div class="form-group col-md-3 col-md-offset-1">
+
+				<label for="exampleInputFile">Choisissez une image</label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" name="InputImage">
+                <small id="fileHelp" class="form-text text-muted">JPG, JPEG, PNG</small>
 
 			</div>
 
@@ -129,8 +136,6 @@
 			</select>
 
 		</div>
-
-</div>
 
 
 
