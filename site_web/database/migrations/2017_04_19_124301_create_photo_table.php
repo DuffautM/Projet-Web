@@ -17,6 +17,7 @@ class CreatePhotoTable extends Migration
             $table->text('path_photo');
             $table->integer('id_activite')->unsigned();
             $table->foreign('id_activite')->references('id')->on('activities');
+            $table->timestamps();
         });
     }
 

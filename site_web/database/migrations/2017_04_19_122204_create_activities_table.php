@@ -23,6 +23,7 @@ class CreateActivitiesTable extends Migration
             $table->boolean('ok_activite');
             $table->text('budget_activite');
             $table->text('gain_activite');
+            $table->timestamps();
         });
     }
 

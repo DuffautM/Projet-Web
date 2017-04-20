@@ -18,6 +18,7 @@ class CreateGoodiesTable extends Migration
             $table->text('type_goodies');
             $table->text('detail_goodies');
             $table->float('prix_goodies');
+            $table->timestamps();
         });
     }
 

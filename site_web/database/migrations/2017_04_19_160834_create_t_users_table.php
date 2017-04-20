@@ -26,6 +26,7 @@ class CreateTUsersTable extends Migration
             $table->text('club_user');
             $table->text('avatar_user');
             $table->integer('privilege_user');
+            $table->timestamps();
         });
     }
 
