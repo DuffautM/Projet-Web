@@ -2,7 +2,7 @@
 @section('titre')
 <div class="container">
     <div class="row">
-        <h3 class="title">Nom du club</h3>
+        <h3 class="title">{{$club->nom_club}}</h3>
     </div>
 @endsection
 
