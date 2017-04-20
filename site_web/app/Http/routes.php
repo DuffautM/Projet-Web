@@ -53,7 +53,7 @@ Route::get('produit1', function () {
     return view('produit');
 });
 
-Route::get('evenement1', function () {
+Route::get('event1', function () {
     return view('evenement');
 });
 
