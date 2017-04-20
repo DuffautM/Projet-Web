@@ -16,4 +16,8 @@ class TUserController extends Controller
     	return view('profil', compact('user'));
 
     }
+    
+    public function storeEvent(){
+        
+    }
 }

@@ -9,15 +9,16 @@
 
 @section('contenu')
     <div class="row">
-        <form>
+        <form method="post" action="PostEvent" class="" enctype="multipart/form-data">
+            {{ csrf_field() }}
             <div class="row">
           <div class="form-group col-xs-4">
               <label for="exampleSelect1">Nom de l'événement</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom de l'événement">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom de l'événement" name="name">
           </div>
         <div class="form-group col-xs-2">
             <label for="exampleSelect1">Centre</label>
-            <select class="form-control" id="exampleSelect1">
+            <select class="form-control" id="exampleSelect1" name="centre">
               <option>Arras</option>
               <option>Bordeaux</option>
               <option>Toulouse</option>
@@ -28,26 +29,26 @@
                 <div class="form-group row col-xs-3" style="margin-left: 0px;">
                   <div>
                       <label for="exampleSelect1">Date de l'événement</label>
-                    <input class="form-control" type="date" value="2017-04-19" id="example-date-input">
+                    <input class="form-control" type="date" value="2017-04-19" id="example-date-input" name="date">
                   </div>
                 </div>
                 
                 <div class="form-group row col-xs-3" style="margin-left: 0px;">
                   <div>
                       <label for="exampleSelect1">Date de fin d'inscription</label>
-                    <input class="form-control" type="date" value="2017-04-19" id="example-date-input">
+                    <input class="form-control" type="date" value="2017-04-19" id="example-date-input" name="EndDate">
                   </div>
                 </div>
             </div>
             <div class="row" style="padding-left: 15px;">
                 <label for="exampleSelect1">Visibilité de l'événement :</label>
                 <label class="custom-control custom-radio">
-                  <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                  <input id="radio1" name="radio1" type="radio" class="custom-control-input" >
                   <span class="custom-control-indicator"></span>
                   <span class="custom-control-description">Tout le monde</span>
                 </label>
                 <label class="custom-control custom-radio">
-                  <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                  <input id="radio2" name="radio2" type="radio" class="custom-control-input">
                   <span class="custom-control-indicator"></span>
                   <span class="custom-control-description">Mon club</span>
                 </label>
@@ -56,7 +57,7 @@
             <div class="row">
                 <div class="form-group col-xs-4">
                 <label for="exampleTextarea">Description courte</label>
-                <textarea class="form-control" id="exampleTextarea" rows="1"></textarea>
+                <textarea class="form-control" id="exampleTextarea" rows="1" name="text"></textarea>
               </div>
             
             </div>
@@ -76,5 +77,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        
+        
     </div>
 @endsection

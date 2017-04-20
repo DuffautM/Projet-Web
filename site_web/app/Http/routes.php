@@ -82,3 +82,5 @@ Route::get('profil/1', function () {
 });
 
 Route::get('profil/{id}', 'TUserController@show');
+
+Route::post('PostEvent', 'TUserController@storeEvent');
