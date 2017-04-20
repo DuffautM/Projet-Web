@@ -60,7 +60,7 @@
 			
 			<div class=" col-md-1 col-md-offset-4">
 
-				<input type="date" min="{{date('Y-m-d')}}" name="InputBirth">
+				<input type="date" name="InputBirth">
 
 			</div>
             <div class="form-group col-md-3 col-md-offset-1">
@@ -132,6 +132,17 @@
 				<option value="Nantes">Nantes</option>
 				<option value="Bordeaux">Bordeaux</option>
 				<option value="Lilles">Lilles</option>
+
+			</select>
+
+		</div>
+
+		<div>
+
+			<select class="form-control	 col-md-offset-2" name="InputClub">
+
+				<option value="Robot">Robot</option>
+				<option value="Sport">Sport</option>
 
 			</select>
 
