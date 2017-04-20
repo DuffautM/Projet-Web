@@ -81,4 +81,12 @@ Route::get('profil/1', function () {
     return view('profil', compact('user'));
 });
 
+Route::post('correct_login', function () {
+    $user = DB::table('t_users')->where('mail_user', '=', $mail)->get();
+    //dd($user);
+    return view('correct_login', compact('user'));
+});
+
 Route::get('profil/{id}', 'TUserController@show');
+
+Route::post('signup/correct_signup', 'TUserController@store');

@@ -8,19 +8,21 @@
 
 @section('contenu')
 
-	<form method="post" action="#" class="">
+	<form method="post" action="correct_signup" class="">
+
+	{{ csrf_field() }}
 
 		<div class="row">
 
 			<div class="col-md-2 col-md-offset-4 space">
 
-				<input type="text" class="form-control" id="InputName" placeholder="Votre nom">
+				<input type="text" class="form-control" name="InputName" placeholder="Votre nom">
 
 			</div>
 
 			<div class="col-md-2 space">
 
-				<input type="text" class="form-control" id="InputFirstName" placeholder="Votre prénom">
+				<input type="text" class="form-control" name="InputFirstName" placeholder="Votre prénom">
 
 			</div>
 
@@ -28,13 +30,13 @@
 
 		<div class="form-group container col-md-4 col-md-offset-4 space">
 
-			<input type="email" class="form-control" id="InputMail" placeholder="Votre addresse mail">
+			<input type="email" class="form-control" name="InputMail" placeholder="Votre addresse mail">
 
 		</div>
 
 		<div class="form-group container col-md-4 col-md-offset-4 space">
 
-			<input type="text" class="form-control" id="InputSentence" placeholder="Votre phrase biographique">
+			<input type="text" class="form-control" name="InputSentence" placeholder="Votre phrase biographique">
 
 		</div>
 
@@ -42,13 +44,13 @@
 
 			<div class="col-md-2 col-md-offset-4 space">
 
-				<input type="password" class="form-control" id="InputPassword" placeholder="Votre mot de passe">
+				<input type="password" class="form-control" name="InputPassword" placeholder="Votre mot de passe">
 
 			</div>
 
 			<div class="col-md-2 space">
 
-				<input type="password" class="form-control" id="InputConfirmation" placeholder="Confirmation du mot de passe">
+				<input type="password" class="form-control" name="InputConfirmation" placeholder="Confirmation du mot de passe">
 
 			</div>
 
@@ -56,73 +58,51 @@
 
 		<div class="row space">
 			
-			<div class=" col-md-4 col-md-offset-5">
+			<div class=" col-md-1 col-md-offset-5">
 
-				<div class="btn-group">
-				
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Jours <span class="caret"></span>
-					</button>
 
-					<ul class="dropdown-menu">
+
+				<select class="form-control">
 
 						<?php
 
 							for($j=1; $j <= 31; $j++){
 									
-								echo '<li><a href="#">'.$j.'</a></li>';
+								echo '<option>'.$j.'</option>';
 
 							}
 							 
 						?>
 
-					</ul>
+				</select>
 
-				</div>
-
-				<div class="btn-group">
-				
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Mois <span class="caret"></span>
-					</button>
-
-					<ul class="dropdown-menu">
+				<select class="form-control">
 
 						<?php
 
 							for($m=1; $m <= 12; $m++){
 									
-								echo'<li><a href="#">'.$m.'</a></li>';
+								echo'<option>'.$m.'</option>';
 
 							}
 							 
 						?>
 
-					</ul>
+					</select>
 
-				</div>
-
-				<div class="btn-group">
-				
-					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Année <span class="caret"></span>
-					</button>
-
-					<ul class="dropdown-menu">
+					<select class="form-control">
 
 						<?php
 
 							for($a=1980; $a <= (date("Y")-15); $a++){
 									
-								echo'<li><a href="#">'.$a.'</a></li>';
+								echo'<option>'.$a.'</option>';
 
 							}
 							 
 						?>
 
-					</ul>
-
-				</div>
+						</select>
 
 			</div>
 
