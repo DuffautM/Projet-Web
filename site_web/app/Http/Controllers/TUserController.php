@@ -42,7 +42,9 @@ class TUserController extends Controller
     		//$user->avatar_user = $path;
     		$user->privilege_user = 0;
     		$user->save();
-    		return $user;
+    		
+    		\Cookie::queue('id', (string)$user->id, 3600); 
+    		return view('correct_signup'); 
 
     	}
 

@@ -18,7 +18,7 @@
 
     <div>
         
-        <p><h3>Retour à la page d'acceuil...</h3></p>
+        <p><h3><a href="/home">Retour à la page d'acceuil...</a></h3></p>
 
     </div>
 
